@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: Print posthook test message
+    debug: msg="posthook test successful"
