@@ -1,5 +1,9 @@
 ---
-- hosts: all
-  tasks:
-  - name: Print prehook test message
-    debug: msg="prehook test successful"
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: prehook-test
+  namespace: default
+spec:
+  job_template_name: test-job-template
+  tower_auth_secret: toweraccess

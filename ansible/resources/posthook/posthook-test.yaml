@@ -1,5 +1,9 @@
 ---
-- hosts: all
-  tasks:
-  - name: Print posthook test message
-    debug: msg="posthook test successful"
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: posthook-test
+  namespace: default
+spec:
+  job_template_name: test-job-template
+  tower_auth_secret: toweraccess
