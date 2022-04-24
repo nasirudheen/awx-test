@@ -6,4 +6,4 @@ metadata:
   namespace: default
 spec:
   job_template_name: test-job-template
-  tower_auth_secret: toweraccess
+  tower_auth_secret: toweraccess1
