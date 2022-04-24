@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: posthook-test
+  name: posthook-test1
   namespace: default
 spec:
   job_template_name: test-job-template
