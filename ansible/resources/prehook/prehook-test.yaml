@@ -5,5 +5,5 @@ metadata:
   name: prehook-test1
   namespace: default
 spec:
-  job_template_name: test-job-template
+  job_template_name: testjobtemplate
   tower_auth_secret: toweraccess1
